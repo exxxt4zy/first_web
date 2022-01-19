@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    
+}
+
+body {
+    transition: .4s;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+}
+
+body.light-theme, body.light-theme .card p, body.light-theme .card output {
+    background-color: rgb(224, 224, 224);
+    color: rgb(201, 89, 89); 
+    transition: .4s;
+}
+body.light-theme .card {
+    background-color: rgb(240, 240, 240);
+}
+
+body.light-theme .card button {
+    box-shadow: 0px 3px rgb(90, 61, 61);
+    color: black;
+    background-color:rgb(197, 141, 141); ;
+}
+
+body.light-theme .clock {
+    border: 2px solid rgb(197, 141, 141);
+    color: rgb(68, 68, 68);
+}
+
+.card {
+    
+    width: 420px;
+    height: 520px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px  rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    text-align: center;
+    margin: 10%;
+    font-size: 1.5em;
+    color: rgb(197, 141, 141);
+}
+
+output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 40px;
+    background: rgb(22, 22, 22);
+    color: rgb(197, 141, 141);
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 1.2em;    
+}
+    
+
+button {
+    cursor: pointer ;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background: rgb(22, 22, 22);
+    box-shadow: 0px 3px rgb(197, 141, 141);
+    color: rgb(197, 141, 141);
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 1em;
+
+}
+
+.clock {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    border-radius: 16px;
+    border: 2px solid rgb(197, 141, 141); 
+}
+
+.clock .clock-numbers {
+    margin-top: 20px;
+    
+    display: flex;
+
+}
+
+.clock .hours {
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.clock .minutes {
+    font-size: 2.4em;
+    text-align: center;
+}
+.clock .divide {
+    -webkit-animation: blink 1.5s linear infinite;
+    animation: blink 1.5s linear infinite;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+@-webkit-keyframes blink {
+    50% {color:rgb(255, 255, 255);}
+    51% {color:rgba(255, 255, 255, 0);}
+    100% {color:rgba(255, 255, 255, 0);}
+}
+
+@keyframes blink {
+    50% {color:rgb(255, 255, 255);}
+    51% {color:rgba(255, 255, 255, 0);}
+    100% {color:rgba(255, 255, 255, 0);}
+}
+
+
