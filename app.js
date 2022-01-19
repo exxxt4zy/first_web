@@ -1,6 +1,5 @@
 const textHours = document.getElementById('hours'),
-    textMinutes = document.getElementById('minutes'),
-    textDivide = document.getElementById('divide')
+    textMinutes = document.getElementById('minutes')
 
 const clockText = () => {
     let date = new Date()
